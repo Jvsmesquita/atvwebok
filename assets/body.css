@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Share+Tech+Mono&display=swap');
+
 :root {
-    --cor-primaria: #272727
+    --cor-primaria: #272727;
+    --cor-secundaria: #272720;
+    --font-primaria: "Roboto", sans-serif;
 }
 
+
+
 body {
-    
+    background-color: var(--cor-primaria);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    height: 100vh;
 }
 
 .cabecalho {
@@ -13,15 +23,27 @@ body {
 .navbar {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 1.5rem;
+    padding: 2rem;
 }
 
 .navbar__conteudo__link {
     color: white;
     text-decoration: none;
     gap: 40%;
-    padding: 8rem ;
+    padding: 4rem ;
+    margin: 4rem;
     
+}
+
+.navbar__conteudo__link:hover {
+    background-color: var(--cor-secundaria);
+    
+}
+
+
+.conteudo__conteudo {
+    background-color: white;
 }
 
 .imgdog {
@@ -33,5 +55,44 @@ body {
     display: flex;
     color: white;
     justify-content: center;
-    background-color: var(--cor-primaria);    
+    background-color: black;    
+}
+
+.div_integrantes {
+    display: flex;
+    justify-content:baseline;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+}
+
+.foto_integrantes {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.info_integrantes {
+    color: white
+}
+
+.links_contatos {
+    padding: 8rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: baseline;
+    justify-content: space-between;
+
+}
+
+.div_projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
 }
